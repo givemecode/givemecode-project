@@ -7,7 +7,7 @@ body.video-bg {
   /* ===== CAPTION SECTION ===== */
 }
 body.video-bg #wrapper {
-  z-index: 999;
+  z-index: 20000;
 }
 body.video-bg #wrapper #bg-hue {
   background-color: rgba(44, 62, 80, 0.7);
@@ -27,6 +27,7 @@ body.video-bg #countdown {
 }
 body.video-bg #caption {
   background-color: transparent;
+  margin-top: -100px;
 }
 body.video-bg #caption .caption q::before,
 body.video-bg #caption .caption q::after {
