@@ -1,0 +1,50 @@
+/* ========== FLATDOWN - EXTRA STYLES FOR VIDEO BACKGROUND TEMPLATE ========== */
+/* ===== VIDEO BACKGROUND ===== */
+body.video-bg {
+  background-color: #34495e;
+  /* ===== INTRO SECTION ===== */
+  /* ===== COUNTDOWN SECTION ===== */
+  /* ===== CAPTION SECTION ===== */
+}
+body.video-bg #wrapper {
+  z-index: 999;
+}
+body.video-bg #wrapper #bg-hue {
+  background-color: rgba(44, 62, 80, 0.7);
+  /* translucent color overlay to make the video more subtle. */
+  z-index: -499;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+body.video-bg #intro {
+  color: #ecf0f1;
+}
+body.video-bg #countdown {
+  background: rgba(255, 255, 255, 0.1);
+}
+body.video-bg #caption {
+  background-color: transparent;
+}
+body.video-bg #caption .caption q::before,
+body.video-bg #caption .caption q::after {
+  content: '';
+}
+body.video-bg #caption .caption .cite {
+  color: #7f8c8d;
+}
+/* ===== HIDE VIDEO ON MOBILE DEVICES ===== */
+@media handheld, only screen and (max-width: 767px) {
+  #tubular-container,
+  #tubular-player,
+  #tubular-shield,
+  #video-controls {
+    display: none;
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: -5000px;
+  }
+}

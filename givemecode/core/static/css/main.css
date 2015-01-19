@@ -1,0 +1,266 @@
+/* ========== FLATDOWN STYLES - TABLE OF CONTENT ========== */
+/*
+1. Typography
+2. Intro Section
+3. Countdown Section
+4. Caption Section
+5. Newsletter Section
+6. Footer Section
+7. Misc Styles
+8. FancyPants Animations
+9. Media Queries
+*/
+/* ========== 1. TYPOGRAPHY ========== */
+h2 {
+  font-size: 52px;
+  line-height: 72px;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+p.lead {
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+/* ========== 2. INTRO SECTION ========== */
+#intro {
+  padding: 48px 0;
+  text-align: center;
+}
+#intro .logo {
+  height: 96px;
+  width: 96px;
+  text-align: center;
+  margin: 0 auto 24px;
+  padding: 0;
+}
+#intro span {
+  font-size: 96px;
+  line-height: 96px;
+  padding: 0;
+  margin: 0 0 24px 0;
+  color: #ecf0f1;
+}
+/* ========== 3. COUNTDOWN SECTION ========== */
+#countdown {
+  padding: 24px 0;
+  background: #1abc9c;
+  color: #34495e;
+  text-align: center;
+}
+#countdown h2 {
+  font-weight: 400;
+}
+#countdown .countdown {
+  color: #ecf0f1;
+  font-size: 32px;
+  margin-top: 48px;
+}
+#countdown .countdown .countdown-wrap {
+  font-weight: 300;
+  line-height: 48px;
+  margin: 0 0 48px 0;
+  padding: 0;
+}
+#countdown .countdown .countdown-wrap .timer {
+  font-weight: 400;
+  color: #ecf0f1;
+  font-size: 96px;
+  line-height: 96px;
+}
+/* ========== 4. CAPTION SECTION ========== */
+#caption {
+  background: #16a085;
+  text-align: center;
+  padding: 72px 0;
+}
+#caption .icon {
+  padding: 0 24px 48px 24px;
+}
+#caption .icon img {
+  margin: 0 auto;
+  text-align: center;
+  height: 216px;
+  width: 216px;
+}
+#caption .caption {
+  text-align: center;
+}
+#caption .caption q {
+  font-size: 40px;
+  line-height: 48px;
+  color: #ecf0f1;
+  font-weight: 300;
+  display: block;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+#caption .caption q::before,
+#caption .caption q::after {
+  font-weight: bold;
+}
+#caption .caption .cite {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+}
+#caption .caption .cite a {
+  color: #ecf0f1;
+  border-bottom: dotted 1px #ecf0f1;
+}
+#caption .caption .cite a:hover {
+  color: white;
+}
+/* ========== 5. NEWSLETTER SECTION ========== */
+#newsletter {
+  padding: 72px 0;
+  background: #ecf0f1;
+  text-align: center;
+  color: #34495e;
+}
+#newsletter form {
+  margin-top: 36px;
+}
+#newsletter form input {
+  height: 72px;
+  margin-bottom: 48px;
+}
+#newsletter form .alert {
+  margin-bottom: 45px;
+}
+/* ========== 6. FOOTER SECTION ========== */
+#footer {
+  padding: 24px 0;
+  background: white;
+  text-align: center;
+  color: #bdc3c7;
+}
+#footer p {
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+/* ========== 7. MISC STYLES ========== */
+.btn {
+  border-radius: 3px;
+}
+.btn-hg,
+a.bnt-hg {
+  height: 72px;
+  line-height: 48px;
+  padding: 12px 32px;
+}
+.modal-dialog {
+  margin: 48px auto;
+}
+.modal-header {
+  line-height: 48px;
+  padding: 18px 24px;
+  background-color: #ecf0f1;
+}
+.modal-body p.lead {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 18px;
+}
+.modal-footer {
+  padding: 16px 24px 12px;
+}
+/* ========== 8. FANCYPANTS ANIMATIONS ========== */
+/* ===== SPIN ANIMATION ===== */
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.spin {
+  -webkit-animation: spin 4s infinite linear;
+  -moz-animation: spin 4s infinite linear;
+  animation: spin 4s infinite linear;
+}
+/* ===== BOUNCE ANIMATION ===== */
+@-moz-keyframes bounce {
+  0% {
+    -moz-transform: translate(0, 0);
+  }
+  50% {
+    -moz-transform: translate(0, 12px);
+  }
+  100% {
+    -moz-transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 12px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 12px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.bounce {
+  -webkit-animation: bounce 0.4s infinite ease-in-out;
+  -moz-animation: bounce 0.4s infinite ease-in-out;
+  animation: bounce 0.4s infinite ease-in-out;
+}
+.bounce-delay {
+  -webkit-animation: bounce 0.4s infinite ease-in-out;
+  -moz-animation: bounce 0.4s infinite ease-in-out;
+  animation: bounce 0.4s infinite ease-in-out;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* ========== 9. MEDIA QUERIES ========== */
+@media (max-width: 767px) {
+  #caption .icon {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #caption .icon img {
+    height: 168px;
+    width: 168px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  #caption .icon img {
+    height: 120px;
+    width: 120px;
+  }
+}
