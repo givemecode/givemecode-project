@@ -264,3 +264,51 @@ a.bnt-hg {
     width: 120px;
   }
 }
+
+/* Styles for buttons container */
+.social {
+  left: 50%;
+  margin: -86px 0 0 -103px;
+  position: absolute;
+  margin-top: 0%; 
+}
+
+/* Google+ */
+.g-icon-bg:after {
+  content: url(https://dl.dropboxusercontent.com/u/54149043/CssDeck/g-icon.png);
+  display: block;
+  padding: 23px 14px 6px 14px;
+}
+
+.g-icon-bg {
+  background: #ce3e26;
+  height: 71px;
+  margin: 0 0 -71px 0;
+  width: 41px; 
+}
+ 
+.g-bg {
+  background: #de4c34;
+  height: 71px;
+  margin-left: 41px;
+  width: 166px; 
+}
+ 
+.g-bg:after {
+  color: #fff;
+  content: "sign in with google+";
+  font-family: 'Oswald', sans-serif;
+  height: 37px;
+  position: relative;
+  text-transform: uppercase;
+  top: 14%;
+  width: 41px; 
+}
+
+.g-bg:hover {
+  cursor: pointer;
+}
+
+.g-bg:active {
+  background: #ce3e26;
+}
